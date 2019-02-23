@@ -121,3 +121,4 @@ home
 data/2008.csv.bz2
 data/test_sessions.csv
 data/train_sessions.csv
+data/site_dic.pkl
