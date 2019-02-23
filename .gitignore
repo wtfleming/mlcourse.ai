@@ -119,3 +119,5 @@ data/athlete_events.csv
 home
 
 data/2008.csv.bz2
+data/test_sessions.csv
+data/train_sessions.csv
