@@ -1,0 +1,89 @@
+
+11 TfidfVectorizer MinMaxScaler cv - 0.9278987636868501
+
+
+
+
+top 100 sites set intersection
+
+website ends with .fr
+
+feature is top 50 alice site
+
+is the first site alice goes to often the same?
+
+
+
+
+
+* TODO Feature - is a site target has ever visited
+build a set of sites target has been to at least once - 1 if in set 0 if not
+
+
+* TODO Look at the class notebooks for linear models
+
+
+
+* TODO One hot encode the year-month category?
+Seems to hurt the cross validation score?
+
+There's a cluster of months target is more common in
+Should help with the months target was not active at all?
+
+
+* TODO Day of week - does target use it more on weekends?
+What about evening on weekends vs middle of day on Tuesday?
+
+
+
+* TODO Are there any sites that the target visits that are not common in the dataset?
+In other words, sites the target visits, but just about no body else does?
+How can that be stored as a feature?
+
+
+https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+says "Equivalent to CountVectorizer followed by TfidfTransformer."
+
+
+
+
+
+* TODO Any features that can be combined?
+
+* TODO What can I do with TF-IDF?
+
+
+* TODO Try another model - random forest?
+
+
+* DONE Target sessions seems to be shorter than 40 seconds
+Neither moved the needle too much?
+
+total_num_sessions: 2297
+num_gte_40_seconds: 554
+0.2411841532433609
+
+
+Much more often then the others
+total_num_sessions: 251264
+num_gte_40_seconds: 109122
+0.43429221854304634
+
+
+At 100 seconds
+total_num_sessions: 2297
+num_gte_40_seconds: 237
+0.10317805833696125
+
+total_num_sessions: 251264
+num_gte_40_seconds: 67738
+0.26958895822720325
+
+
+
+
+
+
+* TODO What is the most common first site in a session, if it’s often the same one make is first site a Boolean feature
+* TODO Session length
+* TODO avg Number of sites visited in a session
