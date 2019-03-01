@@ -1,7 +1,10 @@
 
-11 TfidfVectorizer MinMaxScaler cv - 0.9278987636868501
+One hot encode the hours of the day into 24 features?
+
+Two models one before 2019-09 one after - the first one barely has any activity from alice
 
 
+Limit the sparse matrix features to only be sites alice has visited at least once?
 
 
 top 100 sites set intersection
