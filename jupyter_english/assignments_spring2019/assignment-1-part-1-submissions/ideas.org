@@ -1,22 +1,30 @@
-Look at test set - it's all from 2014? can I ignore the training data before 2013-09?
 
 
-One hot encode the hours of the day into 24 features?
-
-Two models one before 2013-09 one after - the first one barely has any activity from alice
-
-
-Limit the sparse matrix features to only be sites alice has visited at least once?
+* TODO Day of week - does target use it more on weekends?
+What about evening on weekends vs middle of day on Tuesday?
 
 
-top 100 sites set intersection
 
-website ends with .fr
 
-feature is top 50 alice site
 
-is the first site alice goes to often the same?
 
+
+* TODO Limit the sparse matrix features to only be sites alice has visited at least once?
+
+
+* TODO top 100 sites set intersection
+
+* DONE website ends with .fr
+
+* DONE feature is top 50 alice site
+
+* TODO is the first site alice goes to often the same?
+
+
+
+* DONE The submission set is all from 2014 on - only train test on dates 2013-09 and up?
+
+* DONE One hot encode the hours of the day into 24 features?
 
 
 
@@ -29,15 +37,12 @@ build a set of sites target has been to at least once - 1 if in set 0 if not
 
 
 
-* TODO One hot encode the year-month category?
+* DONE One hot encode the year-month category?
 Seems to hurt the cross validation score?
 
 There's a cluster of months target is more common in
 Should help with the months target was not active at all?
 
-
-* TODO Day of week - does target use it more on weekends?
-What about evening on weekends vs middle of day on Tuesday?
 
 
 
