@@ -1,10 +1,18 @@
 
 * --------------------------- Medium claps count competition ---------------------------
 
+* TODO Do data exploration
+
+* TODO look at all fields available in the json
+['_id', '_timestamp', '_spider', 'url', 'domain', 'published',
+ 'title', 'content', 'author', 'image_url', 'tags', 'link_tags', 'meta_tags']
+
 * TODO Add time features: publication hour, whether it's morning, day, night, whether it's a weekend
 
 
 * TODO stem the content and titles?
+
+* TODO Try to determine language as a feature?
 
 * TODO LDA to generate content topics?
 
