@@ -1,36 +1,35 @@
 
+* --------------------------- Medium claps count competition ---------------------------
 
-* TODO Day of week - does target use it more on weekends?
-What about evening on weekends vs middle of day on Tuesday?
-
-
+* TODO Add time features: publication hour, whether it's morning, day, night, whether it's a weekend
 
 
+* TODO stem the content and titles?
 
+* TODO LDA to generate content topics?
 
+* TODO K-nearest neighbors on content to generate feature / topics?
 
-* TODO Limit the sparse matrix features to only be sites alice has visited at least once?
-
-
-* TODO top 100 sites set intersection
-
-* DONE website ends with .fr
-
-* DONE feature is top 50 alice site
-
-* TODO is the first site alice goes to often the same?
+* TODO K-means on content to create groups which can be used as a feature?
 
 
 
-* DONE The submission set is all from 2014 on - only train test on dates 2013-09 and up?
+* --------------------------- Website timeseries competition ---------------------------
 
-* DONE One hot encode the hours of the day into 24 features?
+* TODO Submit top entry, but with liblinear to compare scores
+
+* TODO add a max_iter to the top entry lbfgs and see if it is a better score
+
+
+* TODO Try increasing and decreasing the number of splits:   time_split = TimeSeriesSplit(n_splits=10)
+
+* TODO For social media - instead of 5 features per site, look at all 10 sites and create a didVisitSite single feature for each site
 
 
 
+* TODO Feature - isWeekend?
 
-* TODO Feature - is a site target has ever visited
-build a set of sites target has been to at least once - 1 if in set 0 if not
+
 
 
 * TODO Look at the class notebooks for linear models
@@ -46,7 +45,7 @@ Should help with the months target was not active at all?
 
 
 
-* TODO Are there any sites that the target visits that are not common in the dataset?
+* TODO Are there any sites that the target visits that are not common in the dataset? Or vice versa?
 In other words, sites the target visits, but just about no body else does?
 How can that be stored as a feature?
 
@@ -57,13 +56,11 @@ says "Equivalent to CountVectorizer followed by TfidfTransformer."
 
 
 
-
 * TODO Any features that can be combined?
 
 * TODO What can I do with TF-IDF?
 
 
-* TODO Try another model - random forest?
 
 
 * DONE Target sessions seems to be shorter than 40 seconds
@@ -92,8 +89,5 @@ num_gte_40_seconds: 67738
 
 
 
-
-
-* TODO What is the most common first site in a session, if it’s often the same one make is first site a Boolean feature
 * TODO Session length
 * TODO avg Number of sites visited in a session
