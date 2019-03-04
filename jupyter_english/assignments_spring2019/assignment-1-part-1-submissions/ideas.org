@@ -4,7 +4,11 @@
 * DONE Add time features: publication hour, whether it's morning, day, night, whether it's a weekend
 
 
-* TODO Engineer good features, this is the key to success. Some simple features will be based on publication time, authors, content length and so on
+* TODO add content length as a feature
+
+* TODO Look at all kernels available https://www.kaggle.com/c/how-good-is-your-medium-article/kernels
+
+
 
 * TODO You may not ignore HTML and extract some features from there
 
@@ -21,6 +25,8 @@
 * TODO Play around with blending and/or stacking. An intro is given in this Kernel by @yorko https://www.kaggle.com/kashnitsky/ridge-and-lightgbm-blending-hacking
 
 
+
+
 * TODO Do data exploration
 
 * TODO look at all fields available in the json
@@ -30,12 +36,11 @@
 
 
 
-* TODO stem the content and titles?
-
-* TODO Try to determine language as a feature?
+* TODO Try to determine language content is written in as a feature?
 
 * TODO LDA to generate content topics?
 https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html
+
 
 * TODO K-nearest neighbors on content to generate feature / topics?
 
