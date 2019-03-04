@@ -1,13 +1,33 @@
 
 * --------------------------- Medium claps count competition ---------------------------
 
+* DONE Add time features: publication hour, whether it's morning, day, night, whether it's a weekend
+
+
+* TODO Engineer good features, this is the key to success. Some simple features will be based on publication time, authors, content length and so on
+
+* TODO You may not ignore HTML and extract some features from there
+
+* TODO You'd better experiment with your validation scheme. You should see a correlation between your local improvements and LB score
+
+* TODO Try TF-IDF, ngrams, Word2Vec and GloVe embeddings
+
+* TODO Try various NLP techniques like stemming and lemmatization
+
+* TODO Tune hyperparameters. In our example, we've left only 50k features and used C=1 as a regularization parameter, this can be changed
+
+* TODO SGD and Vowpal Wabbit will learn much faster
+
+* TODO Play around with blending and/or stacking. An intro is given in this Kernel by @yorko
+
+
 * TODO Do data exploration
 
 * TODO look at all fields available in the json
 ['_id', '_timestamp', '_spider', 'url', 'domain', 'published',
  'title', 'content', 'author', 'image_url', 'tags', 'link_tags', 'meta_tags']
 
-* TODO Add time features: publication hour, whether it's morning, day, night, whether it's a weekend
+
 
 
 * TODO stem the content and titles?
@@ -15,6 +35,7 @@
 * TODO Try to determine language as a feature?
 
 * TODO LDA to generate content topics?
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html
 
 * TODO K-nearest neighbors on content to generate feature / topics?
 
@@ -23,6 +44,9 @@
 
 
 * --------------------------- Website timeseries competition ---------------------------
+
+* TODO Look at new kernel published https://www.kaggle.com/kashnitsky/model-validation-in-a-competition
+
 
 * TODO Submit top entry, but with liblinear to compare scores
 
