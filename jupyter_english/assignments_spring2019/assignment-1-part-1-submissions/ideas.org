@@ -1,6 +1,21 @@
 
 * --------------------------- Medium claps count competition ---------------------------
 
+* TODO try sgd with a gridcv search
+
+* TODO Figure out how to do cross validation with sgd
+something like this? http://facweb.cs.depaul.edu/mobasher/classes/CSC478/Notes/IPython%20Notebook%20-%20Regression.html
+
+
+* TODO Try different params with sgd like
+sgdreg = SGDRegressor(penalty='l2', alpha=0.15, n_iter=200)
+
+https://scikit-learn.org/stable/modules/sgd.html
+
+
+* TODO Scale the tf-idf features to be between 0.0 and 1.0?
+
+
 * DONE Add time features: publication hour, whether it's morning, day, night, whether it's a weekend
 
 
