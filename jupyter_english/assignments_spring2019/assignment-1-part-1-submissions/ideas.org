@@ -18,7 +18,7 @@
 
 * TODO SGD and Vowpal Wabbit will learn much faster
 
-* TODO Play around with blending and/or stacking. An intro is given in this Kernel by @yorko
+* TODO Play around with blending and/or stacking. An intro is given in this Kernel by @yorko https://www.kaggle.com/kashnitsky/ridge-and-lightgbm-blending-hacking
 
 
 * TODO Do data exploration
