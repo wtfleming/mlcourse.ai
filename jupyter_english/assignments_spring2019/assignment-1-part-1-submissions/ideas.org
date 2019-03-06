@@ -1,4 +1,21 @@
 
+
+What does this mean?  Bad news in the end: our CV scheme is not perfect. Try to improve it! (hint: is all training set needed for a good prediction?).
+  Does that mean we can drop the first 2 buckets, since they are so much lower in score?
+
+  train_df = train_df.iloc[46102:]
+
+Increase 'C': np.logspace(-2, 2, 10) to 'C': np.logspace(-2, 2, 20) and compare results
+
+Try some different logistic regression settings
+Try liblinear (and the other ones)
+
+Try different algorithms other than logistic regression
+  SGDClassifier  - what does the leaderboard score look like with it? what else?
+
+
+
+
 * --------------------------- Medium claps count competition ---------------------------
 
 * TODO try sgd with a gridcv search
@@ -66,6 +83,8 @@ https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDi
 * --------------------------- Website timeseries competition ---------------------------
 
 * TODO Look at new kernel published https://www.kaggle.com/kashnitsky/model-validation-in-a-competition
+
+* TODO Figure out how to use eli5 like in here https://www.kaggle.com/kashnitsky/model-validation-in-a-competition
 
 
 * TODO Submit top entry, but with liblinear to compare scores
