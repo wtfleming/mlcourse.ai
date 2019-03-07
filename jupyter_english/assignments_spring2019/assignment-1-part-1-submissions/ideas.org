@@ -1,11 +1,35 @@
+For medium - start with 3
+  add features from 2
+
+
+
 
 
 What does this mean?  Bad news in the end: our CV scheme is not perfect. Try to improve it! (hint: is all training set needed for a good prediction?).
   Does that mean we can drop the first 2 buckets, since they are so much lower in score?
 
+
   train_df = train_df.iloc[46102:]
 
-Increase 'C': np.logspace(-2, 2, 10) to 'C': np.logspace(-2, 2, 20) and compare results
+
+See if there is anything specific to alice - ie always goes to a site on a specific day of the week (or weekend)?
+
+
+
+Add some of the time features even though they drop cv score, compare to public LB
+
+Double up the site1 to 5 features, does it improve score further?
+
+find a better site 1 to 5 feature, funcition that checks all 10 sites?
+
+
+https://stats.stackexchange.com/questions/14099/using-k-fold-cross-validation-for-time-series-model-selection
+
+
+
+
+Try fewer splits in time_split = TimeSeriesSplit(n_splits=10)
+
 
 Try some different logistic regression settings
 Try liblinear (and the other ones)
@@ -18,10 +42,34 @@ Try different algorithms other than logistic regression
 
 * --------------------------- Medium claps count competition ---------------------------
 
-* TODO try sgd with a gridcv search
+* TODO Read https://scikit-learn.org/stable/modules/feature_extraction.html
+
+
+* TODO Use SGDRegressor for testing because it is faster
+
+* TODO Look at all kernels available https://www.kaggle.com/c/how-good-is-your-medium-article/kernels
+
 
 * TODO Figure out how to do cross validation with sgd
 something like this? http://facweb.cs.depaul.edu/mobasher/classes/CSC478/Notes/IPython%20Notebook%20-%20Regression.html
+
+
+* DONE The onehotencoder for authors is not working right?  Or maybe it is - they are combined
+cat train_author.txt | sort -rn | uniq | wc -l
+   32182
+cat test_author.txt | sort -rn | uniq | wc -l
+   18842
+
+c -l train_author.txt
+   62313 train_author.txt
+
+wc -l test_author.txt
+   34645 test_author.txt
+
+
+
+* TODO try sgd with a gridcv search
+
 
 
 * TODO Try different params with sgd like
@@ -38,7 +86,7 @@ https://scikit-learn.org/stable/modules/sgd.html
 
 * TODO add content length as a feature
 
-* TODO Look at all kernels available https://www.kaggle.com/c/how-good-is-your-medium-article/kernels
+
 
 
 
